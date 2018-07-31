@@ -62,90 +62,74 @@
     </div>
   </nav>
   <!-- End section navbar -->
+  
+  <div>
+      <header>
+      <nav>
+          <ul class="nav">
+	<li>
+		<a href="#">USUARIOS<span class="flecha">&#9660;</span></a>
+                <ul>
+			<li><a href="#">REGISTR USUARIO<span class="flecha">&#9660</span></a></li>
+			<li><a href="#">MODIFICAR USUARIO<span class="flecha">&#9660</span></a></li>
+			<li><a href="#">ELIMINAR USUARIO<span class="flecha">&#9660</span></a></li>
+                        <li><a href="#">BUSCAR USUARIO<span class="flecha">&#9660</span></a></li>
+		</ul>
+	</li>
+	<li>
+		<a href="#">CLIENTES<span class="flecha">&#9660;</span></a>
+                <ul>
+			<li><a href="#">REGISTAR CLIENTES<span class="flecha">&#9660</span></a></li>
+			<li><a href="#">MODIFICAR CLIENTES<span class="flecha">&#9660</span></a></li>
+			<li><a href="#">ELIMINAR CLIENTES<span class="flecha">&#9660</span></a></li>
+                        <li><a href="#">BUSCAR CLIENTES<span class="flecha">&#9660</span></a></li>
+		</ul>
+	</li>
+	<li>
+		<a href="#">SERVICIOS<span class="flecha">&#9660</span></a>
+		<ul>
+			<li><a href="#">REGISTRAR SERVICIO<span class="flecha">&#9660</span></a></li>
+			<li><a href="#">MODIFICAR SERVICIO<span class="flecha">&#9660</span></a></li>
+			<li><a href="#">ELIMINAR SERVICIO<span class="flecha">&#9660</span></a></li>
+                        <li><a href="#">BUSCAR SERVICIO<span class="flecha">&#9660</span></a></li>
+		</ul>
+	</li>
+        <li>
+		<a href="#">PRESTACIONES<span class="flecha">&#9660</span></a>
+		<ul>
+			<li><a href="#">REGISTRAR PRESTACION<span class="flecha">&#9660</span></a></li>
+			<li><a href="#">MODIFICAR PRESTACION<span class="flecha">&#9660</span></a></li>
+			<li><a href="#">ELIMINAR PRESTACION<span class="flecha">&#9660</span></a></li>
+                        <li><a href="#">BUSCAR PRESTACION<span class="flecha">&#9660</span></a></li>
+		</ul>
+		</ul>
+	</li>
+         <li>
+		<a href="#">PRESTACIONES<span class="flecha">&#9660</span></a>
+		<ul>
+			<li><a href="#">REGISTRAR PRESTACION<span class="flecha">&#9660</span></a></li>
+			<li><a href="#">MODIFICAR PRESTACION<span class="flecha">&#9660</span></a></li>
+			<li><a href="#">ELIMINAR PRESTACION<span class="flecha">&#9660</span></a></li>
+                        <li><a href="#">BUSCAR PRESTACION<span class="flecha">&#9660</span></a></li>
+		</ul>
+		</ul>
+	</li>
+	<li>
+		<a href="#">REPORTES<span class="flecha">&#9660</span></a>
+                <ul>
+			<li><a href="#">REPORTE1<span class="flecha">&#9660</span></a></li>
+			<li><a href="#">REPORTE2<span class="flecha">&#9660</span></a></li>
+			<li><a href="#">REPORTE3<span class="flecha">&#9660</span></a></li>
+                        <li><a href="#">REPORTE4<span class="flecha">&#9660</span></a></li>
+		</ul>
+	</li>
+</ul>
+      </nav>
+          
+  </div>
 
-<div class="header-navigation pull-right font-transform-inherit">
-          <ul>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                INICIO 
-              </a>
-                
-              <ul class="dropdown-menu">
-                <li class="active"><a href="index.html">NOTICIAS</a></li>
-              </ul>
-            </li>
-           
 
-
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                NOSOTROS 
-                
-              </a>
-                
-              <ul class="dropdown-menu">
-                <li><a href="historia.html">HISTORIA</a></li>
-                <li><a href="familia_elohim.html">FAMILIA ELOHIM</a></li>
-                <li><a href="declaraciondefe.html">DECLARACIÓN DE FÉ </a></li>                
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                ACTIVIDADES
-                
-              </a>
-                
-              <ul class="dropdown-menu">
-                    <li><a href="anuales.html">ANUALES</a></li>
-                    <li><a href="congresojuvenil.html">CONGRESO JUVENIL</a></li>
-                    <li><a href="vigilias.html">VIGILIAS REGIONALES</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                MISIONES 
-                
-              </a>
-                
-              <ul class="dropdown-menu">
-                <li><a href="principales.html">IGLESIAS PRINCIPALES</a></li>
-                <li><a href="rurales.html">IGLESIAS RURALES</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                MINISTERIOS 
-                
-              </a>
-                
-              <ul class="dropdown-menu">
-                <li><a href="biblica.html">ESC BÍBLICA</a></li>
-                <li><a href="instituto.html">INSTITUTO</a></li>
-                <li><a href="lideres.html">ESC DE LÍDERES</a></li>
-                <li><a href="fenajcse.html">FENAJCSE</a></li>
-              </ul>
-            </li>
-
-             <li class="dropdown dropdown-megamenu">
-              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                SERMONES
-                
-              </a>
-              <ul class="dropdown-menu">
-                   <li><a href="index.html">FAMILIAR</a></li>
-                   <li><a href="index.html">PROFESÍA</a></li>
-                   <li><a href="index.html">ACTUALIDAD</a></li>     
-              </ul>
-            </li>   
-
-            
-            
-            <li><a href="encuentranos.html" target="_blank">ENCUENTRANOS</a></li>
-          </ul>
-        </div>
-        </div>
-
-  <!-- start section footer -->
+       <!-- start section footer -->
   <div id="footer" class="text-center">
     <div class="container">
       <div class="socials-media text-center">

@@ -28,7 +28,7 @@ and open the template in the editor.
         } catch (Exception $exc){
             $error=$exc->getMessage();
         }
-        header("Location: modificausuario.php");
+        header("Location: modificadorusuario.php");
         
         ?>
     </body>

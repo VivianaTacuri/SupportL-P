@@ -23,7 +23,7 @@
       try {
         requiere_once ('conexion.php');
         $sql = "Select * from SERVICIO";
-        $result = $conn->query($sql);
+        $result = $conecta->query($sql);
 
       } catch (Exception $e) {
         $error=$e->getMessage();

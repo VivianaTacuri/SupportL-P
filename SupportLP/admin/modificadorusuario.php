@@ -6,22 +6,22 @@
         session_destroy();
         header('Location:../index.php');
     }
-	
     $id=isset($_SESSION["id"]) ? $_SESSION["id"]: NULL;
     $id2=isset($_SESSION["id2"]) ? $_SESSION["id2"]: NULL;
 ?>
 <html>
-<head>
-        <meta charset="utf-8"/>
-        <meta name="description" content="support l&P"/>
+    <head><meta http-equiv="Content-Type" content="text/html; charset=gb18030">
+        <title>MODIFICAR CLIENTE</title>
+        
+        <meta name="description" content="surtimax"/>
         <meta name="keywords" content="HTML, CSS3, Javascript"/>
-        <title>ADMINISTRADOR</title>
+        <link rel="stylesheet" href="css/estilo_modif.css"/>
         <link rel="icon" href="img/icono_aris.ico"/>
-        <link rel="stylesheet" href="css/estiloadministrador.css"/>
+        <link rel="stylesheet" href="css/estilo_registrar.css"/>
         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-</head>
-<body> 
-	<div id="pre-header">
+    </head>
+    <body>
+        <div id="pre-header">
             <div id="telefono">
                 <span>+593 022 906 865</span>
             </div>        
@@ -37,7 +37,8 @@
                 <h1><b>SUPPORT L&P</b></h1>
                 <h3><b></b></h3>
             </div>
-            <div id="visitanos"><br>
+            <div id="visitanos">
+                <br>
                 <h3 id="barra">EN CONSTANTE RENOVACIÓN</h3>
                 <p>"support L&P servicios contables y tributarios "</p>
             </div>
@@ -100,13 +101,52 @@
             </nav>
             </div>
         </header>
-        <hr>
-             <article>
-                   &#128100; BIENVENIDO A LA ADMINISTRACIÓN
-             </article>
-        <footer>
+            <div class="tablatrabajador">
+                 <div class="tablatrabajador2">  
+		     <?php
+        try {
+            require_once 'conexion.php';
+            $sql="select * from USUARIO";
+            $result=$conecta->query($sql);
+        } catch (Exception $exc) {
+            echo $exc->getMessage();
+        }
+                ?>
+                     <table class="tabla">
+<TR>
+<TD>&nbsp;credencial</TD>
+<TD>&nbsp;clave&nbsp;</TD>
+<TD>&nbsp;nombre&nbsp;</TD>
+<TD>&nbsp;telefono&nbsp;</TD>
+<TD>&nbsp;direccion&nbsp;</TD>
+<TD>&nbsp;email&nbsp;</TD>
+<TD>&nbsp;tipo&nbsp;</TD>
+<TD>&nbsp;modificar&nbsp;</TD>
+</TR>
+
+        <?php
+        while($row=$result->fetch_array()) {
+printf("<tr>
+    <td>&nbsp;%s</td>
+    <td>&nbsp;%s&nbsp;</td>
+    <td>&nbsp;%s&nbsp;</td>
+    <td>&nbsp;%s&nbsp;</td>
+    <td>&nbsp;%s&nbsp;</td>
+    <td>&nbsp;%s&nbsp;</td>
+    <td>&nbsp;%s&nbsp;</td>
+    <td><a href=\"modificausu.php?id_usuario=%d\"><img src='img/modifica.png' width='30' height='30'/></a></td>
+    </tr>",
+$row["credencial"],$row["clave"],$row["nombre"],$row["telefono"],$row["direccion"],$row["email"],$row["tipo"],$row["id_usuario"]);
+}
+$result->close();
+$conn->close();
+        ?>
+</table>
+             </div>
+        </div>
+    <footer>
             <hr align="center" width="100%" size="1">
-            <p>&COPY; SUPPORT L&P. Todos los derechos reservados - 2018<br>Riobamba - Ecuador</p>
-        </footer>	
+            <p>&COPY; SURTIMAX. Todos los derechos reservados - 2018<br>Riobamba - Ecuador</p>
+    </footer>
     </body>
 </html>

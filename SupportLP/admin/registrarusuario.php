@@ -6,30 +6,29 @@
         session_destroy();
         header('Location:../index.php');
     }
-	
     $id=isset($_SESSION["id"]) ? $_SESSION["id"]: NULL;
     $id2=isset($_SESSION["id2"]) ? $_SESSION["id2"]: NULL;
 ?>
 <html>
-<head>
-        <meta charset="utf-8"/>
-        <meta name="description" content="support l&P"/>
+<head><meta charset="UTF-8"/>
+        
+        <meta name="description" content="surtimax"/>
         <meta name="keywords" content="HTML, CSS3, Javascript"/>
-        <title>ADMINISTRADOR</title>
+        <title>REGISTRAR CLIENTE</title>
         <link rel="icon" href="img/icono_aris.ico"/>
-        <link rel="stylesheet" href="css/estiloadministrador.css"/>
+        <link rel="stylesheet" href="css/estilo_reg.css"/>
         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 </head>
 <body> 
 	<div id="pre-header">
             <div id="telefono">
-                <span>+593 022 906 865</span>
+                <span>+593 984573207</span>
             </div>        
             <div id="email">
-                <span>soportecontablelp@gmail.com</span>
+                <span>xxxxxx@xxxxxx.xxxxx</span>
             </div>
             <div class="nombreusuario">
-                <a class="link" href="admin.php"><span>  <<           &#128100;                   Administrador: <?php echo ($id)." ".($id2) ?></span></a>
+                <a class="link" href="admin.php"><span><< &#128100; Administrador: <?php echo ($id)." ".($id2) ?></span></a>
             </div>
         </div>
         <header>
@@ -100,13 +99,46 @@
             </nav>
             </div>
         </header>
-        <hr>
-             <article>
-                   &#128100; BIENVENIDO A LA ADMINISTRACIÓN
-             </article>
+                <article class="articlenew">
+                <div class="contenido">
+                    <img src="../img/userr1.png">
+                    <h2>INGRESAR DATOS CLIENTE</h2>
+                    <?php
+                    if(!isset($_POST["verificar"]))
+                    {
+                        ?>
+                        <form action="agregausu.php" method="post">
+            <table>
+                <TR>
+                    <TD>Credencial:</TD><TD><INPUT class="input" TYPE="text" NAME="credencial" SIZE="20" MAXLENGTH="30"></TD></TR>
+                    <TR><TD>Clave:</TD><TD><INPUT class="input" TYPE="text" NAME="clave" SIZE="20" MAXLENGTH="30"></TD></TR>
+                    <TR><TD>nombre:</TD><TD><INPUT class="input" TYPE="text" NAME="nombre" SIZE="20" MAXLENGTH="30"></TD></TR>
+                    <TR><TD>telefono:</TD><TD><INPUT class="input" TYPE="text" NAME="telefono" SIZE="20" MAXLENGTH="30"></TD></TR>
+                    <TR><TD>direccion:</TD><TD><INPUT class="input" TYPE="text" NAME="direccion" SIZE="20" MAXLENGTH="30"></TD></TR>
+                    <TR><TD>Email:</TD><TD><INPUT class="input" TYPE="text" NAME="email" SIZE="20" MAXLENGTH="30"></TD></TR>
+                    <TR><TD>Tipo:</TD><TD><select class="input" TYPE="tipo" NAME="tipo" required>
+        <option selected></option>
+        <option selected>administrador</option>
+        <option selected>trabajador</option>
+        </select>
+</TD>
+</TR>
+                
+</table>
+                            <INPUT class="btn_submint"  TYPE="submit" NAME="agregausu.php" VALUE="GUARDAR">
+            </form>
+            
+                        <?php
+                    }
+                    else
+                    {
+                    }
+                    ?>
+                </div>
+                </article>
         <footer>
             <hr align="center" width="100%" size="1">
-            <p>&COPY; SUPPORT L&P. Todos los derechos reservados - 2018<br>Riobamba - Ecuador</p>
+            <p>&COPY; SURTIMAX. Todos los derechos reservados - 2018<br>Riobamba - Ecuador</p>
         </footer>	
     </body>
 </html>
